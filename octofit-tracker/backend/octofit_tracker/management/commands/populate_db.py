@@ -1,9 +1,6 @@
-from django.core.management.base import BaseCommand
 from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
 from datetime import timedelta
 from bson import ObjectId
-
-# Explicitly re-import the Command class to ensure Django recognizes it
 from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
